@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename='css/mainpg.css')}}"
+    />
+    <link rel="stylesheet" href="{{url_for('static',filename='css/land.css') }}" />
+    <link rel="stylesheet" href="{{url_for('static', filename='css/dashboard.css')}}" />
+  </head>
+
+  <body>
+    <div class="navbar">
+        
+      <h1 id="main-heading"> GO-Green</h1>
+      <ul class="list1">
+        <li id="home-link" onclick="window.location.href='/more'">FOR-HELP</li>
+        <select name="select" id="Laungage" onchange="ourfunction()">
+          <option value="english" >English</option>
+          <option value="kannada">ಕನ್ನಡ</option>
+         
+          <option value="hindi" >हिंदी</option>
+          <option value="telugu">తెలుగు</option>           
+          <option value="tamil" >தமிழ்</option>
+        </select>
+        
+      <button id="Login-link" class="btn" onclick="window.location.href='/login'">LOG-IN</button>
+    
+      
+      </ul>
+    </div>
+    <div class="center">
+      <div class="form-input">
+        <!-- Preview box -->
+        <div class="preview">
+          <img src="" alt="" id="file-ip-1-preview" />
+          <canvas id="canvas" width="320" height="249"></canvas>
+        </div>
+
+        <div class="select_model">Select Mode</div> 
+
+        <form
+          class="container"
+          action="/predict"
+          method="post"
+          enctype="multipart/form-data"
+        >
+
+          <label for="image1" class="image1">Upload image</label>
+          <input class="input" type="file" name="image" id="image1" />
+
+          
+          <input type="submit" value="predict" class="predict" id="predict1" />
+          <!--<label onclick="selectCamera()" for="Select_camera" class="cameraBtn">Select_camera</label>
+          <input type="button" name="image" id="image1" />
+            <div class="select_btn">
+            <div id="Start_camera">Start_camera</div>
+            <video name="camera"  id="video" width="320" height="249" autoplay></video>
+            <div id="click_photo" onclick="btnclick()">click_photo</div>
+             <button onclick="submit()" id="submit">Predict</button> -->
+          </div>
+          
+        </form>
+      </div>
+    </div>
+
+    <script src="{{url_for('static', filename='js/main.js')}}"></script>
+    <script src="{{url_for('static', filename='js/dashboard.js')}}"></script>
+    <!-- <script src="{{url_for('static', filename='js/a.js')}}"></script> -->
+  </body>
+</html>

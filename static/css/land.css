@@ -1,0 +1,217 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   /* background : url("C:\Users\YASHWANTH G M\Pictures\Screenshots\Screenshot 2023-08-24 172340.png"); */
+} 
+.chotu{
+    height: 20px;
+    width: 20px;
+    padding: 5px;
+}
+
+.container1{
+
+    /* border:5px solid white; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    
+}
+.navbar h1{
+    /* margin-left: 10px;
+    color: aliceblue; */
+    /* justify-content: center; */
+    /* width: 37%; */
+   
+}
+.navbar {
+    justify-content: center;
+    display: flex;
+    gap: 402px;
+    align-items: center;
+    color: #0c0c0c;
+    /* border: none; */
+    /* border-radius: 20px; */
+    width: -webkit-fill-available;
+    /* box-sizing: inherit; */
+    background-color: #ebe9f3;
+    position: absolute;
+    top: 20px;
+    font-size: 20px;
+}
+.list1 {
+    display: flex;
+    /* margin-left: 400px; */
+    cursor: pointer;
+    gap: 47px;
+    align-items: center;
+    list-style: none;
+    color: #0c0c0c;
+    /* font-size: 18px; */
+    font-weight: bolder;
+    align-items: center;
+    justify-content: center;
+}
+li:hover{
+    color: rgb(14, 12, 102);
+    text-decoration: underline ;
+}
+.btn {
+    /* border-radius: 10px; */
+    /* background-color: darkcyan; */
+    border: none;
+    cursor: pointer;
+    /* width: 101px; */
+    /* font-size: 15px; */
+    /* height: 38px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #353232; */
+    color: #000606;
+    font-size: 16px;
+    background-color: #ebe9f3;
+    font-weight: bold;
+}
+.btn:hover{
+    color: rgb(28, 7, 212);
+    text-decoration: underline;
+}
+#Laungage {
+    /* background: #984538; */
+    color: #fcfafa;
+    border: 2px solid;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: rgb(69, 45, 1);
+}
+option{
+    background-color: #080808;
+}
+.container3 {
+    justify-content: center;
+    display: flex;
+    /* margin-right: -233px; */
+    width: 50%;
+    height: 32rem;
+    /* gap: 40rem; */
+}
+.container3 img{
+    animation:  container3 5s ease-in-out;
+}
+/* @keyframes container3{
+    0% {
+        transform: translateY(100%);
+    }
+    to{
+       transform: translateY(0);
+    }
+} */
+.heading {
+    color: rgb(5 5 5);
+    margin-left: 119px;
+    font-size: 20px;
+    font-weight: bolder;
+    width: 50%;
+}
+.heading h2 {
+    font-size: 26px;
+    color: #1e32d2;
+    text-decoration: underline;
+}
+.heading h3{
+     font-size:50px;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     
+     height: 10px;
+}
+.heading h4{
+    font-size: 50px;
+  margin-top: 119px;
+  height: 10px;
+}
+
+.container2 {
+    display: flex;
+    align-items: center;
+    gap: 175px;
+    justify-content: center;
+    width: 100%;
+    height: 32em;
+    position: absolute;
+    top: 77px;
+}
+.btn2 {
+    width: 161px;
+    height: 35px;
+    font-size: 14px;
+    background-color: #0a0a0a;
+    /* background: transparent; */
+    /* border: 2px brown; */
+    color: #f4f7f7;
+    border-radius: 10px;
+    /* margin-top: 34px; */
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+}
+.btn2:hover{
+    color: #0a0a0a;
+    background-color: aliceblue;
+}
+.leftside h1{
+font-size: 20px;
+color:  rgb(215, 212, 210);
+}
+.leftside h2{
+    font-size: 20px;
+    color:  rgb(215, 212, 210);
+}
+.leftside h3{
+    font-size: 15px;
+    color:  rgb(215, 212, 210);
+}
+.leftside{
+    display: block;
+}
+.leftside2{
+    display: none;
+}
+.leftside2 h1{
+    font-size: 20px;
+    color: rgb(215, 212, 210);
+}
+.leftside2 h2{
+    font-size: 20px;
+    color:  rgb(215, 212, 210);
+}
+.leftside2 h3{
+font-size: 15px;
+color:  rgb(215, 212, 210);
+}
+.lenier{
+    background-image: linear-gradient(to right,aqua,green,yellow,red);
+    height: 4px;
+    /* border: 1px solid black; */
+    border-radius: 2px;
+    width: 50px;
+}
+.leftside img{
+    height: 50px;
+    width: 50px;
+}
+.latral{
+    background-image: linear-gradient(to right,rgb(100, 115, 115),rgb(45, 62, 45),rgb(232, 232, 155),rgb(231, 140, 75));
+    height: 4px;
+    border-radius: 2px;
+    width: 50px;
+}
+.leftside2 img{
+    height: 50px;
+    width: 50px;
+}
+#INFO{
+    background: transparent;
+}
+

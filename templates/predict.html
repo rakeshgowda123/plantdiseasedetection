@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <link rel="stylesheet" href="{{url_for('static',filename='css/predict.css') }}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/index.css') }}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/land.css') }}" />
+</head>
+<body>
+  <div class="navbar">
+        
+    <h1 id="main-heading"> GO-Green</h1>
+    <ul class="list1">
+      <li id="home-link" onclick="window.location.href='/more'">FOR-HELP</li>
+      
+      
+   
+    <a id="sign-link" class="btn" href="/signup">SIGN-UP</a>
+    </ul>
+  </div>
+    
+    <div class="main">
+    
+    <img class="img" src="{{url_for('static',filename='uploads/test_image.jpg') }}" alt="image">
+    <div class="text">
+        <h2 class="deta">RESULT</h2>
+    <h1>Disease :{{disease_name}}</h1>
+    <h1>Disease Description :{{desc}}</h1>
+    <h1>Symptoms :{{Symptoms}}</h1>
+    <h1>Recommended Treatment  :{{Recommendedtreatment}}</h1>
+    <h1>Remedy :{{Remedy}}</h1>
+    </div>
+</div>
+  
+</body>
+
+</html>

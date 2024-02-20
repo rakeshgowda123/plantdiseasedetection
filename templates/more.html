@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="{{url_for('static', filename='css/more.css')}}" />
+    <link rel="stylesheet" href="{{url_for('static',filename='css/land.css') }}" />
+    <title>Aloe Vera Plant</title>
+</head>
+<body>
+  <div class="navbar">
+        
+    <h1 id="main-heading"> GO-Green</h1>
+    <ul class="list1">
+      <li id="home-link" onclick="window.location.href='/more'">FOR-HELP</li>
+      <!--<select name="select" id="Laungage" onchange="ourfunction()">
+        <option value="english" >English</option>
+        <option value="kannada">ಕನ್ನಡ</option>
+       
+        <option value="hindi" >हिंदी</option>
+        <option value="telugu">తెలుగు</option>           
+        <option value="tamil" >தமிழ்</option>
+      </select>-->
+      
+    <button id="Login-link" class="btn" onclick="window.location.href='/login'">LOG-IN</button>
+  
+    <a id="sign-link" class="btn" href="/signup">SIGN-UP</a>
+    </ul>
+  </div>
+<div class="part2">
+  <header>
+    <h1>Aloe Vera: The Miracle Plant</h1>
+  </header>
+
+  <section class="history">
+    <h2>History of Aloe Vera</h2>
+    <p>
+      Aloe Vera, a succulent plant with a rich history, has been used for centuries for its medicinal properties.
+      Ancient civilizations, including the Egyptians and Greeks, valued Aloe Vera for its healing and skincare benefits.
+      Today, it continues to be a popular plant known for its versatile uses.
+      
+In India, Aloe vera has a longstanding history deeply rooted in traditional medicine and cultural practices. Revered for its therapeutic properties, Aloe vera finds mention in ancient Indian texts like Ayurveda, 
+where it is known as "Kumari" or "Ghrita-kumari." Indian Ayurvedic practitioners have traditionally used Aloe vera for its cooling, anti-inflammatory, and rejuvenating effects on the body. It is considered beneficial for skincare, digestion, and overall well-being.
+ The succulent plant is also cultivated in various regions of India, and its gel is commonly applied topically for treating skin conditions and burns. Aloe vera's popularity extends to contemporary times, with a wide range of Aloe-based products available in the Indian market.
+  Moreover, its presence in Indian households as a natural remedy underscores its continued significance in the country's health and wellness practices.
+    </p>
+  </section>
+
+  <section class="videos">
+    <h2>Watch Videos</h2>
+    <div class="video-container">
+      <iframe width="560" height="315" src="static\video\WhatsApp Video 2023-12-20 at 08.53.59_caea55b4.mp4" frameborder="0" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="static\video\WhatsApp Video 2023-12-20 at 08.54.00_8ccfa916.mp4" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </section>
+  <div class="pdf-container">
+    <h1>PDF Viewer</h1>
+
+    <!-- PDF Viewer using iframe -->
+    <iframe src="static\pdf\kkk.pdf" width="800" height="600" class="pdf-viewer"></iframe>
+
+    <!-- Download link for the PDF -->
+    <p>
+        <a href="static\pdf\kkk.pdf" download="document.pdf" class="download-link">Download PDF</a>
+    </p>
+</div>
+
+  <footer>
+    <p>Learn more about Aloe Vera and unleash the power of nature!</p>
+  </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,101 @@
+body {
+    /* background-color: cadetblue; */
+    margin: 0px;
+    /* height: 100vh; */
+    /* background: antiquewhite; */
+    background: url("/static/img/nice.jpeg")no-repeat;
+   background-size: cover;
+   background-position: center;
+}
+
+
+.cont{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.select_model{
+    background: cornflowerblue;
+    height: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8em;
+    border-radius: 1em;
+    cursor: pointer;
+    display: none;
+}
+
+.image1{
+    background: dodgerblue;
+    height: 3em;
+    width: 8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1em;
+    cursor: pointer;
+    margin-left: 45px;
+    /* display: none; */
+}
+.input{
+    visibility: hidden;
+}
+.cameraBtn{
+    background: dodgerblue;
+    height: 3em;
+    width: 8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1em;
+    cursor: pointer;
+}
+
+/* #image2{
+    display: none;
+} */
+
+.predict {
+    height: 3em;
+    border: none;
+    display: flex;
+    background: #17d017;
+    /* justify-content: center; */
+    align-items: center;
+    width: 10em;
+    border-radius: 1em;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 60px;
+}
+.predict:hover{
+    background-color: black;
+    color: azure;
+}
+
+#predict1{
+    display: none;
+}
+/* .select_btn{
+    display: none;
+} */
+.form-input{
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 900;
+    border: 2px solid;
+    width: 14em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10em;
+    background-color: #ebe9f3;
+    border-radius: 23px;
+
+}
+.center {
+    flex-direction: column;
+    gap: 20px;
+}

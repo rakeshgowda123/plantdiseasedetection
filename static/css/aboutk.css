@@ -1,0 +1,28 @@
+body{
+    background: url("about.pic1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 470px;
+    width: 470px;
+  }
+.navbar h1{
+width: 50%;
+  }
+.navbar{
+    justify-content: center;
+    display: flex;
+    gap: 714px;
+    align-items: center;
+    margin-left: -154px;
+}
+.navlist{
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  list-style: none;
+  gap: 113px;
+  margin-right: -1066px;
+}
+.navlist :hover{
+  color: green;
+}

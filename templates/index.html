@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>landing page</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/land.css') }}" />
+    
+    <link rel="icon" href="" />
+    <script src="{{url_for('static',filename='js/index.js') }}" defer></script>
+    
+    
+    <script>
+      function redirectToMore() {
+        window.location.href = '/more';
+    }
+  </script>
+  </head>
+  <body>
+    <div class="container1">
+      <div class="navbar">
+        
+        <h1 id="main-heading"> GO-Green</h1>
+        <ul class="list1">
+          <li id="home-link" onclick="">FOR-HELP</li>
+          <select name="select" id="Laungage" onchange="ourfunction()">
+            <option value="english" >English</option>
+            <option value="kannada">ಕನ್ನಡ</option>
+           
+            <option value="hindi" >हिंदी</option>
+            <option value="telugu">తెలుగు</option>           
+            <option value="tamil" >தமிழ்</option>
+          </select>
+          
+        <button id="Login-link" class="btn" onclick="window.location.href='/login'">LOG-IN</button>
+      
+        <a id="sign-link" class="btn" href="/signup">SIGN-UP</a>
+        </ul>
+      </div>
+      <div class="container2">
+        <div class="heading">
+          <h2 id="head-link">FEATURE</h2>
+          <p id="content">ಆರೋಗ್ಯಕರ ಜೀವನಕ್ಕಾಗಿ ಆರೋಗ್ಯಕರ ಸಸ್ಯ ನಿಮ್ಮ ಎಲ್ಲಾ ದೈನಂದಿನ ಬಳಕೆಗಾಗಿ ವೆಬ್‌ಸೈಟ್ </p>
+          
+         
+          <button id="more-info" class="btn2" onclick="redirectToMore()">ಹೆಚ್ಚಿನ ವಿವರಗಳಿಗಾಗಿ</button>
+        </div>
+        
+        <div class="container3">
+          <img src="{{url_for('static',filename='img/go,3.3.png') }}" alt=""/>
+        </div>
+       
+    </div>
+    
+    
+  </body>
+</html>

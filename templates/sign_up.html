@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGN UP</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/signup.css') }}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/land.css') }}" />
+   
+</head>
+<body>
+    <div class="navbar">
+        
+        <h1 id="main-heading"> GO-Green</h1>
+        <ul class="list1">
+            <li id="home-link" onclick="window.location.href='/more'">FOR-HELP</li>
+          
+          
+       
+        
+        </ul>
+      </div>
+
+    <div class="container1">
+        
+       
+
+<h1>Sign Up</h1>
+{% with messages = get_flashed_messages() %}
+    {% if messages %}
+        <ul class="flash-messages">
+            {% for message in messages %}
+                <li>{{ message }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+{% endwith %}
+<form action="{{ url_for('signup') }}" method="post">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+    <label for="confirm_password">Confirm Password:</label>
+    <input type="password" id="confirm_password" name="confirm_password" required>
+    <button type="submit">SIGN UP</button>
+   
+    
+   <!-- <button type="submit" onclick="window.location.href='index.html'">HOME</button>-->
+   <button type="button" onclick="window.location.href='{{ url_for('index') }}'" {% if not enable_login_button %}disabled{% endif %}>HOME</button>
+
+</form>
+</div>
+
+</body>
+</html>

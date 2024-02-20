@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>landing page</title>
+    <link rel="stylesheet" href="langaugechange.css" />
+    <link rel="icon" href="" />
+  </head>
+  <body>
+    <div class="container1">
+      <div class="navbar">
+        <h1>ಗೋಗ್ರೀನ್</h1>
+         
+        <ul class="list1">
+          <li onclick="">ಸಹಾಯಕ್ಕಾಗಿ</li>
+          <select name="select" id="Laungage" onchange="ourfunction()">
+            <option value="PRODUCT"> ಭಾಷೆ ಆಯ್ಕೆ</option>
+            <option value="english">english</option>
+            <option value="Hindi" >हिंदी</option>
+            <option value="telugu">తెలుగు</option>           
+            <option value="tamil" >தமிழ்</option>
+          </select>
+          
+        <button class="btn" onclick="myFuncation()">ಲಾಗಿನ್</button>
+        </ul>
+      </div>
+      <div class="container2">
+        <div class="heading">
+          <h2>FEATURE</h2>
+          <h3>ಆರೋಗ್ಯಕರ ಜೀವನಕ್ಕಾಗಿ </h3>
+          <h4>ಆರೋಗ್ಯಕರ ಸಸ್ಯ</h4>
+          <h5>ನಿಮ್ಮ ಎಲ್ಲಾ ದೈನಂದಿನ ಬಳಕೆಗಾಗಿ ವೆಬ್‌ಸೈಟ್</h5>
+          <button class="btn2" onclick="aboutfuncation()">ಹೆಚ್ಚಿನ ವಿವರಗಳಿಗಾಗಿ</button>
+        </div>
+
+        <div class="container3">
+          <img src="go,3.3.png" alt=""/>
+        </div>
+       
+    </div>
+    <script>
+     function ourfunction(){
+        var Laungage = document.querySelector(".Laungage");
+        console.log("chnage language here only");
+     }
+    </script>
+  </body>
+</html>

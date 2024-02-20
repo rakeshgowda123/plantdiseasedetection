@@ -1,0 +1,139 @@
+body{
+    /* background-color: cadetblue; */
+    margin: 0px;
+    height: 100vh;
+    background: #1283da;
+    
+}
+.center{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.from-input{
+    width: 350px;
+    padding: 20px;
+    background: white;
+    box-shadow: -3px -3px 7px rgba(94, 104, 121, 0.377), 3px 3px 7px rgba(94, 104, 121, 0.377);
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+
+}
+.from-input img{
+    width: 100%;
+    margin-bottom: 30px;
+    display: none;
+}
+.from-input label{
+    display: block;
+    width: 45%;
+    height: 45px;
+    margin-left: 25%;
+    text-align: center;
+    background: #1172c2;
+    line-height:45px ;
+    color:white ;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family:sans-serif ;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 15px;
+}
+.from-input input{
+    display: none;
+    
+}
+.input-feld{
+    
+    margin-top: 200px;
+    display: flex;
+    align-items: center;
+}
+.imgBtn{
+    display: none;
+    margin-top: 43px;
+    
+}
+.select_btn{
+    display: none;
+}
+#canvas{
+    display: none;
+}
+#select_mode{
+    height: 42px;
+    width: 38%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #1172c2;
+    border-radius: 6px;
+    border: none;
+    font-size: 17px;
+}
+.cameraBtn{
+    margin-left: 87px;
+    margin-top: 13px;
+}
+.cameraBtn1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 42px;
+    width: 60%;
+    border: none;
+    border-radius: 16px;
+    background: #1172c2;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#Start_camera{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 42px;
+    width: 50%;
+    border: none;
+    border-radius: 16px;
+    background: #1172c2;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#click_photo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 42px;
+    width: 50%;
+    border: none;
+    border-radius: 16px;
+    background: #1172c2;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.preview{
+    margin-bottom: 24px;
+}
+#submit{
+    display: none;
+    /* display: flex; */
+    height: 42px;
+    width: 50%;
+    border: none;
+    border-radius: 16px;
+    background: #1172c2;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 10px;
+}

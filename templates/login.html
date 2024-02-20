@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/login.css') }}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/land.css') }}" />
+    <script src="{{url_for('static',filename='js/index.js') }}" defer></script>
+    <!-- <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> -->
+    <title>ಲೋಳೆಸರ</title>
+</head>
+
+<body>
+    <div class="container1">
+        <div class="navbar">
+        
+            <h1 id="main-heading"> GO-Green</h1>
+            <ul class="list1">
+                <li><a id="home-link" href="templates\index.html">For-Help</a></li>
+              
+            
+            <a id="sign-link" class="btn" href="/signup">Sign-Up</a>
+            </ul>
+          </div>
+  <!-- ... <div class="Main">
+        <div class="container">
+            <div class="top-header">
+                <span>ಖಾತೆಯನ್ನು ಹೊಂದಿರುತ್ತಾರೆ?</span>
+                <header>ಲಾಗಿನ್</header>
+            </div>
+            <form action="/login" method="post">
+                <div class="input-field">
+                    <input type="text" class="input" placeholder="ಬಳಕೆದಾರ ಹೆಸರು" name="username" required>
+                    <i class='bx bx-user'></i>
+                </div>
+                <div class="input-field">
+                    <input type="tel" class="input" placeholder="ಬಳಕೆದಾರರ ಮೊಬೈಲ್ ಸಂಖ್ಯೆ" name="ph_no" required>
+                    <i class='bx bxs-phone-call'></i>
+                </div>
+                <div class="input-field">
+                     <input type="submit" class="submit" value="ಲಾಗಿನ್"> 
+                    <button type="submit" class="submit">login</button> onclick="window.location.href='mainpg.html'"  
+            </form>
+        </div>
+
+
+        <div class="bottom">
+            <div class="left">
+                <input type="checkbox" id="check">
+                <label for="check">ನನ್ನನ್ನು ನೆನಪಿನಲ್ಲಿ ಇಡು</label>
+            </div>
+            <div class="right">
+                <label><a href="#">ಪಾಸ್ವರ್ಡ್ ಮರೆತಿರಾ</a></label>
+            </div>
+
+
+        </div>
+    </div>
+    </div>   -->
+
+
+
+   
+        <h1 class="h1">Login</h1>
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <ul class="flash-messages">
+                    {% for message in messages %}
+                        <li>{{ message }}</li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        {% endwith %}
+        <form action="{{ url_for('login') }}" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit" onclick="window.location.href='dashboard.html'">Login</button>
+            <button type="button" onclick="window.location.href='{{ url_for('signup') }}'">SIGNUP</button>
+        </form>
+</body>
+
+</html>

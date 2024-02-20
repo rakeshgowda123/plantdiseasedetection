@@ -1,0 +1,76 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    height: fit-content;
+    padding: 20px;
+    text-align: center;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+}
+
+h1 {
+    margin: 0;
+}
+
+.history, .videos {
+    margin: 20px 0;
+}
+
+.video-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+footer {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    position: relative;
+    top: 30px;
+}
+.part2{
+    position: relative;
+    top: 125px;
+}
+
+
+
+
+
+/* .pdf-container {
+    text-align: center;
+    margin-top: 20px;
+    
+} */
+
+.pdf-viewer {
+    border: 1px solid #121111;
+    height: 25em;
+    width: 40em;
+    border-radius: 20px;
+}
+
+.download-link {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #3498db;
+    border: 1px solid #3498db;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.download-link:hover {
+    background-color: #267bb5;
+}
